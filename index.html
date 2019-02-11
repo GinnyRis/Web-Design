@@ -1,0 +1,26 @@
+<!DOCTYPE <html>
+<head>
+    <meta charset="utf-8" />
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <h1>Random Number Generator</h1>
+
+    <p>Click the button to display a random number between 1 and 100.</p>
+
+    <button onclick="myFunction()">Try it</button>
+    
+    <p id="click"></p>
+    
+    <div class="number">
+    <script>
+    function myFunction() {
+      var x = document.getElementById("click")
+      x.innerHTML = Math.floor((Math.random() * 100) + 1);
+    }
+    </script>
+    </div>
+</body>
+</html>
